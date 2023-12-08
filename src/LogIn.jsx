@@ -1,4 +1,8 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+
+
 
 const LogIn = (props) => {
     //Állapotok:
@@ -8,6 +12,8 @@ const LogIn = (props) => {
         const [isUsernameEmpty, setIsUsernameEmpty] = useState(false);
         const [isCheckOk, setIsCheckOk] = useState(true);
         const [isPwdEmpty, setIsPwdEmpty] = useState(false);
+
+        let navigate = useNavigate();
 
     //Bejelentkezés gombra kattintva:
         const handleSubmit = (e) => {
@@ -63,7 +69,7 @@ const LogIn = (props) => {
                                         /////////////////////////////////////////////
                                         //EZ LESZ A SIKERES BELÉPÉS !!!!!!!!!!!!!!!!!
                                         /////////////////////////////////////////////
-                                        
+                                    
                                     } else {
                                         setIsCheckOk(false)
                                         console.log("Sikertelen bejelentkezés!!!")
@@ -107,8 +113,12 @@ const LogIn = (props) => {
                 <button className="submit-btn" onClick={handleSubmit} type="submit">Bejelentkezés</button>
             </form>
             <br />
-            <button className="link-btn" onClick={() => props.onFormSwitch('register')}>Nincs még fiókod? <br /> Regisztrálj itt</button>
-
+            <p>
+            Nincs még fiókod?<br />
+                <span className="line">
+                    <Link to="/register">Regisztrálj itt</Link>
+                </span>
+            </p>
         </div>
     );
 }

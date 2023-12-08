@@ -30,7 +30,6 @@
   align-items: center;
   justify-content: center;
   margin-top: 15px;
-  text-align: left;
   display: flex;
   flex-direction: column;
 }
@@ -48,6 +47,7 @@
 }
 .login-panel p{
   width: 400px;
+  margin: auto;
 }
 .submit-btn {
   justify-content: center;
@@ -61,7 +61,8 @@
   cursor: pointer;
   display: flex;;
 }
-.link-btn{
+
+.line{
   background: #fff;
   color: rgb(0, 0, 0);
   text-decoration: underline;
@@ -82,11 +83,10 @@
   justify-content: center;
   min-height: 100vh;
   margin-top: 15px;
-  text-align: left;
   display: flex;
   flex-direction: column;
 }
-.login-panel h1{
+.register-panel h1{
   margin-bottom: 90px;
   color: #000;
 }
@@ -113,6 +113,10 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+}
+.login-panel p{
+  width: 400px;
+  margin: auto;
 }
 .register-panel button {
   background: #f15e35;

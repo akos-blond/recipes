@@ -1,5 +1,6 @@
-import { useEffect, useState } from "react";
-import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
+import { useEffect, useState} from "react";
+import { useNavigate } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const Register = (props) => {
     const [username, setUsername] = useState('');
@@ -9,7 +10,8 @@ const Register = (props) => {
     const [isUsernameAlreadyUsed, setIsUsernameAlreadyUsed] = useState(false);
     const [isPwdTooShort, setIsPwdTooShort] = useState(false);
     const [isPwdAgainNotMatches, setIsPwdAgainNotMatches] = useState(false);
-    const history = useHistory();
+
+    let navigate= useNavigate();
 
     useEffect( () => {    
         fetch('http://localhost:3002/users')
@@ -28,7 +30,7 @@ const Register = (props) => {
 
             const usernameLower = username.toLowerCase();
 
-            if(username == '') {
+            if(username === '') {
                 setIsUsernameTooShort(false)
                 setIsUsernameAlreadyUsed(false)
             } else {
@@ -53,7 +55,7 @@ const Register = (props) => {
     })
 
     useEffect( ()=> {
-        if(password == '') {
+        if(password === '') {
             setIsPwdTooShort(false)
         } else {
             if(password.length < 6) {
@@ -62,10 +64,10 @@ const Register = (props) => {
                 setIsPwdTooShort(false)
             }
         }
-    })
+    }, [password])
 
     useEffect( ()=> {
-        if(passwordAgain == '') {
+        if(passwordAgain === '') {
             setIsPwdAgainNotMatches(false);
         } else {
             if(passwordAgain !== password){
@@ -74,7 +76,7 @@ const Register = (props) => {
                 setIsPwdAgainNotMatches(false)
             }
         }
-    })
+    }, [passwordAgain, password])
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -95,7 +97,7 @@ const Register = (props) => {
             console.log('new account added')
         }).then(()=>{
             setTimeout(()=>{
-                history.push('/login')},2000)
+                navigate('/')},2000)
             })
         }
     }
@@ -127,7 +129,12 @@ const Register = (props) => {
                 <button className="submit-btn" onClick={handleSubmit}  type="submit">Regisztráció</button>
             </form> 
             <br />
-            <button className="link-btn" onClick={() => props.onFormSwitch('login')}>Van már felhasználói fiókod? <br /> Lépj be itt</button>
+            <p>
+            Van már felhasználói fiókod?<br />
+                <span className="line">
+                    <Link to="/login">Lépj be itt</Link>
+                </span>
+            </p>
         </div>
 
     );

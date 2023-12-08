@@ -1,16 +1,17 @@
-import { useHistory, useParams } from "react-router-dom/cjs/react-router-dom.min";
+import { useNavigate, useParams } from "react-router-dom";
 import useFetch from "./useFetch";
 
 const RecipeDetails = () => {
     const {id} = useParams();
     const { data: recipe, error, isPending} = useFetch('http://localhost:3001/receptek/' + id);
-    const history = useHistory();
+    let navigate = useNavigate();
+
 
     const handleClick = () => {
         fetch('http://localhost:3001/receptek/' + recipe.id, {
             method: 'DELETE'
         }).then(() => {
-            history.push('/')
+           navigate('/')
         })
     }
 
