@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #333;
+}
+/*Login panel*/
+.login-panel{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.login-panel-form{
+  min-width: 600px;
+  max-width: 60%;
+  margin: 10px auto;
+  padding: 20px;
+}
+.login-panel h1{
+  margin-bottom: 90px;
+  color: #000;
+}
+.login-panel h2{
+  color: #f15e35;
+}
+
+.login-panel label{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+.login-panel input {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  padding: 6px 10px;
+  margin: 10px auto;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+.login-panel p{
+  width: 400px;
+}
+.submit-btn {
+  justify-content: center;
+  background: #f15e35;
+  color: #fff;
+  width: 200px;
+  margin: 30px auto;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;;
+}
+.link-btn{
+  background: #fff;
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+/*Register panel*/
+.register-panel-form{
+  min-width: 600px;
+  max-width: 60%;
+  margin: 10px auto;
+  padding: 20px;
+}
+.register-panel{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin-top: 15px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+.login-panel h1{
+  margin-bottom: 90px;
+  color: #000;
+}
+.register-panel h2 {
+  margin: 0px auto 30px auto;
+}
+.register-panel label {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+.register-panel input {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  padding: 6px 10px;
+  margin: 10px auto;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+.register-panel button {
+  background: #f15e35;
+  color: #ffffff;
+  width: 40%;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.instuctions{
+  margin: auto;
+  padding: 6px;
+  font-size: 12px;
+  font-weight: bolder;
+  color:#f15e35;
+  border: 1px solid #f15e35;
+  border-radius: 20px;
+  width: 60%;
+}
+
+.offscreen {
+  display: none;
+}
+
+/*MAIN*/
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+.navbar h1 {
+  color: #f15e35;
+}
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+.navbar a:hover {
+  color: #f15e35;
+}
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+/* recipe previews / list */
+.recipe-preview {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #fafafa;
+}
+.recipe-preview:hover {
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+}
+.recipe-preview h2 {
+  font-size: 20px;
+  color: #f15e35;
+  margin-bottom: 8px;
+}
+.recipe-preview a{
+  text-decoration: none;
+}
+/* recipe details page */
+.recipe-details h2 {
+  font-size: 20px;
+  color: #f15e35;
+  margin-bottom: 10px;
+}
+.recipe-details h3 {
+  margin: 20px 0 4px 0;
+}
+.recipe-details div {
+  margin: 20px 0;
+}
+.recipe-details button {
+  background: #f15e35;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+/* create new recipe form */
+.create {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.create label {
+  text-align: left;
+  display: block;
+}
+.create h2 {
+  font-size: 20px;
+  color: #f15e35;
+  margin-bottom: 30px;
+}
+.create input, .create textarea, .create select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+.create button {
+  background: #f15e35;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}

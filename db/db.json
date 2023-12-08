@@ -1,0 +1,66 @@
+{
+  "receptek": [
+    {
+      "title": "Amerikai palacsinta",
+      "ingredients": [
+        "250 g liszt",
+        "100 g porcukor",
+        "1 db tojás",
+        "2,5 dl tej",
+        "2 ek. vaj(olvasztott)",
+        "1 cs. sütőport",
+        "1 k.k. só (csapott)",
+        "vanília aroma"
+      ],
+      "body": "1) Az olvasztott vajat összekeverjük a tojással.\n2) Hozzáadjuk a lisztet, a porcukrot, a sót, a sütőport és a vaníliát.\n3) A tej segítségével csomómentesre keverjük.\n\nA palacsintát akkor fordítani meg, amikor megjelennek a tetejükön a buborékok.",
+      "author": "Bia",
+      "id": 1
+    },
+    {
+      "title": "Túrós pogácsa",
+      "ingredients": [
+        "30 dkg liszt",
+        "1/2 cs. sütőpor",
+        "25 dkg túró",
+        "25 dkg margarin",
+        "2,5 dkg élesztő",
+        "1 púpozott ek. só",
+        "1 egész tojás",
+        "1-2 evőkanál tejfől az élesztő felforralására",
+        "reszelt trappista sajt a pogácsák tetejére"
+    ],
+      "body": "Először a sót elkeverjük a tojásban, az élesztőt pedig a tejfölben, majd mendkettőt félretesszük. (utoljára adjuk hozzá a tésztához.)\n A sütőport elkeverjük a 30 dkg lisztben, majd a 25 dkg margarint (előre célszerű lehűteni) belekeverjük a lisztbe és eldörzsöljük benne.\n Ezután egyenletesen elkeverjük benne a túrót, hozzáadjuk a tojás a sóval, a tejfölt az élesztővel és az egészet jól összedolgozzuk, majd a tésztát néhány órára a hűtőbe tesszük pihenni. (Célszerű este összeállítani a tésztát és másnap sütni)\n A tészta kidolgozásánál és nyújtásánál csak éppen annyi lisztet használjunk, hogy ne ragadjon.\n A hűtőből kivéve a tésztát, szükség szerint átdolgozzuk és ujjnyi vastagra nyújtjuk.",
+      "author": "Bia",
+      "id": 2
+    },
+    {
+      "title": "Editke szelet",
+      "ingredients": [
+        "45 dkg liszt",
+        "15 dkg cukor",
+        "5 dkg zsír",
+        "1 egész tojás",
+        "4 ek. tej",
+        "2 ek. olvasztott méz",
+        "1 ek. szódabikarbóna",
+        "1 db sütőpor"
+      ],
+      "body": "Az egészet összekeverjük és 4 lappal kisütjük.(Nagyon hamar sül.)\n Töltelék: 20 dkg vajat, 20 dkg cukorral/porcukorral, 1 egész tojással kikavarjuk.",
+      "author": "Anya",
+      "id": 3
+    },
+    {
+      "title": "Lávasüti",
+      "ingredients": [
+        "10 dkg étcsoki",
+        "10 dkg vaj",
+        "8 dkg cukor",
+        "5 dkg liszt",
+        "2 tojás"
+      ],
+      "body": "1) Az étcsokit a vajjal együtt vízgőz felett felolvasztani.\n 2) A cukrot habosra keverni a tojásokkal, majd hozzászitálni a lisztet, végül beleforgatni a csokit.\n\n  Fél órát hagyni a hűtőben pihenni.",
+      "author": "Bia",
+      "id": 4
+    }
+  ]
+}

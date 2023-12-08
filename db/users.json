@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "username": "akos",
+      "password": "ilovebia",
+      "id": 1
+    },
+    {
+      "username": "Bianka",
+      "password": "iloveakos",
+      "id": 2
+    },
+    {
+      "username": "AK47",
+      "password": "machinegun",
+      "id": 3
+    },
+    {
+      "username": "proba",
+      "password": "proba123",
+      "id": 4
+    },
+    {
+      "username": "proba5659945358456",
+      "password": "5651156551",
+      "id": 5
+    },
+    {
+      "username": "proba123",
+      "password": "proba123",
+      "id": 6
+    },
+    {
+      "username": "proba999",
+      "password": "123456",
+      "id": 7
+    }
+  ]
+}
