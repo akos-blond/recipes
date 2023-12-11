@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 
 
-const LogIn = (props) => {
+const Login = (props) => {
     //Állapotok:
         const [username, setUsername] = useState('');
         const [password, setPassword] = useState('');
@@ -69,7 +69,7 @@ const LogIn = (props) => {
                                         /////////////////////////////////////////////
                                         //EZ LESZ A SIKERES BELÉPÉS !!!!!!!!!!!!!!!!!
                                         /////////////////////////////////////////////
-                                    
+                                        
                                     } else {
                                         setIsCheckOk(false)
                                         console.log("Sikertelen bejelentkezés!!!")
@@ -123,4 +123,4 @@ const LogIn = (props) => {
     );
 }
 
-export default LogIn;
+export default Login;

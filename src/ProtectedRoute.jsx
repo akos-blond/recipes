@@ -6,11 +6,11 @@ const ProtectedRoute = ({ user, children }) => {
 
     useEffect(() =>{
     if (!user) {
-      return navigate("/home");
+      return navigate("/");
+    } else {
+      return navigate("/home")
     }
     })
-
-  
     return children;
   };
 

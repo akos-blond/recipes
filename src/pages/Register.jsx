@@ -132,7 +132,7 @@ const Register = (props) => {
             <p>
             Van már felhasználói fiókod?<br />
                 <span className="line">
-                    <Link to="/login">Lépj be itt</Link>
+                    <Link to="/">Lépj be itt</Link>
                 </span>
             </p>
         </div>
