@@ -1,17 +1,12 @@
-import { useEffect } from "react";
-import { useNavigate} from "react-router-dom";
+import { Navigate } from "react-router-dom";
+import Navbar from "./Navbar";
 
-const ProtectedRoute = ({ user, children }) => {
-    const navigate = useNavigate();
-
-    useEffect(() =>{
-    if (!user) {
-      return navigate("/");
-    } else {
-      return navigate("/home")
-    }
-    })
-    return children;
-  };
-
-  export default ProtectedRoute;
+const ProtectedRoute = ({ isAuth, children, onLogout }) => {
+  if (isAuth) {
+    return <div className="content"><Navbar 
+    onLogout={onLogout}/>{children}</div>;
+  } else {
+    return <Navigate to="/login"/>
+  }
+};
+export default ProtectedRoute;

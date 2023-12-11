@@ -1,7 +1,7 @@
 import RecipeList from "./RecipeList";
-import useFetch from "../hooks/useFetch";
+import useFetch from "../../hooks/useFetch";
 
-const Home = () => {
+const Home = ({onLogout}) => {
     const { data: recipes, isPending, error} = useFetch('http://localhost:3001/receptek')
 
 

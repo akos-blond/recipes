@@ -1,5 +1,5 @@
 import { useNavigate, useParams } from "react-router-dom";
-import useFetch from "../hooks/useFetch";
+import useFetch from "../../hooks/useFetch";
 
 const RecipeDetails = () => {
     const {id} = useParams();

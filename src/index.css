@@ -1,31 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 * {
   margin: 0;
   font-family: "Quicksand";
   color: #333;
 }
 /*Login panel*/
-.login-panel{
+.login-panel {
   text-align: center;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
 }
-.login-panel-form{
+.login-panel-form {
   min-width: 600px;
   max-width: 60%;
   margin: 10px auto;
   padding: 20px;
 }
-.login-panel h1{
+.login-panel h1 {
   margin-bottom: 90px;
   color: #000;
 }
-.login-panel h2{
+.login-panel h2 {
   color: #f15e35;
 }
 
-.login-panel label{
+.login-panel label {
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -45,7 +45,7 @@
   display: flex;
   flex-direction: column;
 }
-.login-panel p{
+.login-panel p {
   width: 400px;
   margin: auto;
 }
@@ -59,10 +59,10 @@
   padding: 8px;
   border-radius: 8px;
   cursor: pointer;
-  display: flex;;
+  display: flex;
 }
 
-.line{
+.line {
   background: #fff;
   color: rgb(0, 0, 0);
   text-decoration: underline;
@@ -71,13 +71,13 @@
   font-size: 16px;
 }
 /*Register panel*/
-.register-panel-form{
+.register-panel-form {
   min-width: 600px;
   max-width: 60%;
   margin: 10px auto;
   padding: 20px;
 }
-.register-panel{
+.register-panel {
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -86,7 +86,7 @@
   display: flex;
   flex-direction: column;
 }
-.register-panel h1{
+.register-panel h1 {
   margin-bottom: 90px;
   color: #000;
 }
@@ -114,7 +114,7 @@
   display: flex;
   flex-direction: column;
 }
-.login-panel p{
+.login-panel p {
   width: 400px;
   margin: auto;
 }
@@ -127,12 +127,12 @@
   border-radius: 8px;
   cursor: pointer;
 }
-.instuctions{
+.instuctions {
   margin: auto;
   padding: 6px;
   font-size: 12px;
   font-weight: bolder;
-  color:#f15e35;
+  color: #f15e35;
   border: 1px solid #f15e35;
   border-radius: 20px;
   width: 60%;
@@ -144,7 +144,8 @@
 
 /*MAIN*/
 .navbar {
-  padding: 20px;
+  height: 100px;
+  padding: 5px;
   display: flex;
   align-items: center;
   max-width: 800px;
@@ -153,6 +154,7 @@
 }
 .navbar h1 {
   color: #f15e35;
+  margin: auto;
 }
 .navbar .links {
   margin-left: auto;
@@ -165,26 +167,42 @@
 .navbar a:hover {
   color: #f15e35;
 }
+.navbar button {
+  margin-left: 16px;
+  background: #f15e35;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
 .content {
-  max-width: 600px;
-  margin: 40px auto;
-  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 /* recipe previews / list */
+.recipe-list {
+  margin-top: 40px;
+}
+.recipe-list h2 {
+  color: #000;
+}
+
 .recipe-preview {
   padding: 10px 16px;
   margin: 20px 0;
   border-bottom: 1px solid #fafafa;
 }
 .recipe-preview:hover {
-  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
 }
 .recipe-preview h2 {
   font-size: 20px;
   color: #f15e35;
   margin-bottom: 8px;
 }
-.recipe-preview a{
+.recipe-preview a {
   text-decoration: none;
 }
 /* recipe details page */
@@ -222,7 +240,9 @@
   color: #f15e35;
   margin-bottom: 30px;
 }
-.create input, .create textarea, .create select {
+.create input,
+.create textarea,
+.create select {
   width: 100%;
   padding: 6px 10px;
   margin: 10px 0;
