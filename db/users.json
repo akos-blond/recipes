@@ -2,48 +2,33 @@
   "users": [
     {
       "username": "akos",
-      "password": "ilovebia",
+      "password": "akos123",
       "id": 1
     },
     {
       "username": "Bianka",
-      "password": "iloveakos",
+      "password": "bia123",
       "id": 2
-    },
-    {
-      "username": "AK47",
-      "password": "machinegun",
-      "id": 3
     },
     {
       "username": "proba",
       "password": "proba123",
-      "id": 4
-    },
-    {
-      "username": "proba5659945358456",
-      "password": "5651156551",
-      "id": 5
+      "id": 3
     },
     {
       "username": "proba123",
       "password": "proba123",
-      "id": 6
-    },
-    {
-      "username": "proba999",
-      "password": "123456",
-      "id": 7
+      "id": 4
     },
     {
       "username": "probaaa",
       "password": "probaaa",
-      "id": 8
+      "id": 5
     },
     {
-      "username": "probaaaa",
-      "password": "probaaaa",
-      "id": 9
+      "username": "proba999999",
+      "password": "proba99999",
+      "id": 6
     }
   ]
 }
