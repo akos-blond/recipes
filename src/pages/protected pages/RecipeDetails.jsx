@@ -24,7 +24,7 @@ const RecipeDetails = () => {
                 <h2>{recipe.title}</h2>
                 <p>Alkotó: {recipe.author}</p>
                 <h3>Hozzávalók:</h3>
-                <ul className="ingredients">{recipe.ingredients.map((part) => <li key={part}>{part}</li>)}</ul>
+                <ul className="ingredients">{recipe.ingredients?.map((part) => <li key={part}>{part}</li>)}</ul>
                 <h3>Elkészítés:</h3>
                 <div>{recipe.body && recipe.body.split('\n').map((part) => <p key={part}>{part}</p>)}</div>
                 <button onClick={handleClick}>Törlés</button>
